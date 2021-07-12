@@ -19,7 +19,6 @@
 
 import pygame
 from constants import *
-from functions import *
 pygame.init()
 
 
