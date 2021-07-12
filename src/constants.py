@@ -20,8 +20,8 @@
 import pygame
 
 # Display settings
-WIDTH, HEIGHT = 1300, 1300
-PADDING = 125
+WIDTH, HEIGHT = 1000, 1000
+PADDING = 55
 FPS = 60
 
 # Colors
