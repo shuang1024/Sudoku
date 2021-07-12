@@ -16,3 +16,16 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <https://www.gnu.org/licenses/>.
 #
+
+import pygame
+
+# Display settings
+WIDTH, HEIGHT = 1500, 1500
+PADDING = 1500-1250
+
+# Colors
+
+BLACK = (0, 0, 0)
+RED = (255, 0, 0)
+GRAY = (128, 128, 128)
+WHITE = (255, 255, 255)
