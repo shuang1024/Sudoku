@@ -18,13 +18,34 @@
 #
 
 import pygame
+from constants import *
+from functions import *
+pygame.init()
 
-# Display settings
-WIDTH, HEIGHT = 1300, 1300
-PADDING = 125
 
-# Colors
-BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-GRAY = (128, 128, 128)
-WHITE = (255, 255, 255)
+def main():
+    display = pygame.display.set_mode((WIDTH, HEIGHT))
+    pygame.display.set_caption("Sudoku")
+
+    clock = pygame.time.Clock()
+
+    selected = None
+
+    while True:
+        clock.tick(FPS)
+
+        pygame.display.update()
+        events = pygame.event.get()
+        for event in events:
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                return
+
+        keys = pygame.key.get_pressed()
+        m_pos = pygame.mouse.get_pos()
+        m_clicked = pygame.mouse.get_pressed()
+
+        display.fill(GRAY)
+
+
+main()
