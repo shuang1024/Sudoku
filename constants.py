@@ -20,11 +20,10 @@
 import pygame
 
 # Display settings
-WIDTH, HEIGHT = 1500, 1500
-PADDING = 1500-1250
+WIDTH, HEIGHT = 1300, 1300
+PADDING = 125
 
 # Colors
-
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 GRAY = (128, 128, 128)
